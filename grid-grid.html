@@ -1,0 +1,538 @@
+<!doctype html>
+<html lang="uk" xmlns="http://www.w3.org/1999/html">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <link rel = "icon" href =
+            "pngwing.com%20(2в4).png"
+          type = "image/x-icon">
+    <link rel = "stylesheet" href="shapes.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link rel = "stylesheet" href = "index.css">
+    <link rel = "stylesheet" href = "font/onest.css">
+    <script src = "js/anime.js"></script>
+
+
+    <title>Grid-сітка | Дизайн інтерфейсу за допомогою CSS3</title>
+</head>
+<body>
+<main>
+<header class = "mobile" style = "width:auto">
+    <div class="row">
+    <div class = "col-2">
+    <a href = "index.html"><img src = "6x/Group%20417.svg"></a></div>
+    <div class = "col-8"></div>
+    <div class = "col-2">
+        <img src = "6x/menu_white_24dp.svg" onclick="get_sidemenu();"></div>
+    </div>
+</header>
+<header class = "desktop" style="background-color: rgba(0,0,0,0)">
+
+<!-- фон -->
+
+
+
+<div class=" menu" >
+<ul class = "emenu" id = "now" style="position: fixed">
+    <li><div><a class = "no-inlight" href="index.html"><img src="6x/Group%20297.svg"></a> </div></li>
+    <li><div><a  href = "setup.html">Встановлення</a></div></li>
+    <li><div><a class="selected marked" onclick="exmenu_event(2)"><div class = "marker">Grid-Cітка</div>Cітка</a><a href="flex-grid.html" style = "display: none">Flex-сітка</a><a href="grid-grid.html" style = "display: none">Grid-сітка</a></div> </li>
+    <li><div><a class="" onclick="exmenu_event(4)">Проєктування</a><a href="view.html" style = "display: none">Оздоблення</a><a href="color.html" style = "display: none">Колір</a><a href="font.html" style = "display: none">Шрифт</a></div> </li>
+    <li><div><a class="" onclick="exmenu_event(5)">Верстка</a><a href="relative.html" style = "display: none">Адаптивність</a><a href="selectors.html" style = "display: none">Селектори</a></div> </li>
+
+</ul>
+</div>
+</nav>
+
+</header>
+
+<div class = "mmain"><div class = "base" style = "margin-right: 15px">
+    <div class = "row" id = "">
+        <div class = "col-sm-1 hcol"></div>
+        <div class = "col-12 col-sm-10">
+            <h1>Cітка Grid</h1>
+        </div>
+        <div class = "col-sm-1 hcol" ></div></div>
+    <div class = "row description" style="margin-top: 50px">
+        <div class = "col-sm-1"></div>
+        <div class = "col-sm-10"><img src = "6x/Group%20283.svg" style = "float:left; margin-right: 8.3333333%" class = "col-sm-4 hcol"><p style = "text-align: left; margin-top: 0">Створення модульної сітки вкрай важливий етап у створенні веб-інтерфейсів. За допомоги нею можна визначити відносини між елементами інтерфейсу, підтримувати певні пропорції в інтерфейсі.
+            Cітка допомагає впорядкувати елементи інтерфейса, зробити вигляд інтерфейсу більш приємним для перегляду. Сітка визначає єдиний стиль оформлення. Дає відчуття скомпонованості
+            Як не складно здогадатися основний елемент модульної сітки є модель. Розбиття екрану на модулі: колонки чи рядки, дозволяє завчасно продумати як виглядатиме веб-інтерфейс. СSS має два основних способи верстання модульної сітки: Flex та Grid.</p></div>
+            <div class = "col-sm-1 col-2"></div>
+</div>
+    <div class = "row" id = "">
+        <div class = "col-sm-1 hcol"></div>
+        <div class = "col-12 col-sm-10">
+            <h1>Grid-контейнер</h1>
+        </div>
+        <div class = "col-sm-1 hcol" ></div></div>
+    <div class = "row description">
+        <div class = "col-sm-1"></div>
+        <div class = "col-sm-10"><p style = "text-align: left; margin-top: 10px">Grid-сітка являє собою одномірну сітку. Тобто простір за її допомогою ділиться на колонки, а всі елементи розташовуються вздовж однієї вісі</p></div>
+        <div class = "col-sm-1 col-2"></div>
+    </div>
+<div class = " row container-r">
+    <div class = "col-sm-1 hcol"></div>
+
+    <div class = "container-label col-sm-2 col-12">
+      <p>  Контейнер</p>
+    </div>
+    <div class = "col-sm-9 hcol"></div>
+    <div class = "col-sm-1 hcol"></div>
+    <div class = "contatiner-wrap col-12 col-sm-10">
+        <div class = "container-grid" style="justify-content: space-between; flex-wrap: wrap">
+<div class = "container-module col-sm-1 сol-1"><p>Модуль</p></div>
+            <div class = "container-module" style="flex-grow: 8; width: auto;"><p>Модуль</p></div>
+            <div class = "container-module col-sm-1 col-1"><p>Модуль</p></div>
+            <div class = "container-module"  style="width: 100%"><p>Модуль</p></div>
+            <div class = "container-module " style="flex-grow: 1; width: auto;"><p>Модуль</p></div>
+            <div class = "container-module " style="flex-grow: 1; width: auto;"><p>Модуль</p></div>
+            <div class = "container-module " style="flex-grow: 1; width: auto;"><p>Модуль</p></div>
+        </div>
+
+    </div>
+</div>
+
+    <div class = "row description">
+        <div class = "col-sm-1"></div>
+        <div class = "col-sm-10"><p style = "text-align: left; margin-top: 10px">Щоб створити Grid-контейнер необхідно у властивості контейнера вказати</p></div>
+        <div class = "col-sm-1 col-2"></div>
+    </div>
+    <div class = "row ">
+        <div class = "col-sm-1 hcol"></div>
+        <div class = "col-sm-10 col-12">
+            <!-- HTML generated using hilite.me --><div class="code" style=" overflow:auto;width:auto;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><div style = "margin-top:10px">
+            <pre style="margin: 0; line-height: 125%"><span style="color: #f92672">disply:</span> <span style="color: #f92672">grid;</span>
+</pre></div>
+
+            <div class = "clipboard"><img src = "6x/content_copy_white_24dp%20(1).svg">
+        </div>
+
+
+        </div>
+            <div class = "copy!">
+                <img src = "6x/content_copy_white_24dp%20(1).svg"><p>Копіювати</p>
+            </div>
+        </div>
+    </div>
+    <div class = "row description">
+        <div class = "col-sm-1"></div>
+        <div class = "col-sm-10"><p style = "text-align: left; margin-top: 10px">Особливістю Grid-контейнера є необхідність вказувати модулі і їх розміри всередині сітки. для цього використовується властивість grid-template-column(для колонок) та grid-template-rows(для рідків).
+            Важливою також є одиниця fr, яка вказує на розмір однієї колонки.</p></div>
+        <div class = "col-sm-1 col-2"></div>
+    </div>
+    <div class = "row ">
+        <div class = "col-sm-1 hcol"></div>
+        <div class = "col-sm-10 col-12">
+            <!-- HTML generated using hilite.me --><div class="code" style=" overflow:auto;width:auto;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><div style = "margin-top:10px">
+           <pre style="margin: 0; line-height: 125%"><span style="color: #a6e22e">.container</span> <span style="color: #f8f8f2">{</span>
+  <span style="color: #f8f8f2">grid</span><span style="color: #f92672">-</span><span style="color: #f8f8f2">template</span><span style="color: #f92672">-</span><span style="color: #f8f8f2">columns</span><span style="color: #f92672">:</span> <span style="color: #f92672">...</span>  <span style="color: #f92672">...</span><span style="color: #f8f8f2">;</span>
+  <span style="color: #75715e">/* e.g. </span>
+<span style="color: #75715e">      1fr 1fr</span>
+<span style="color: #75715e">      minmax(10px, 1fr) 3fr</span>
+<span style="color: #75715e">      repeat(5, 1fr)</span>
+<span style="color: #75715e">      50px auto 100px 1fr</span>
+<span style="color: #75715e">  */</span>
+  <span style="color: #f8f8f2">grid</span><span style="color: #f92672">-</span><span style="color: #f8f8f2">template</span><span style="color: #f92672">-</span><span style="color: #f8f8f2">rows</span><span style="color: #f92672">:</span> <span style="color: #f92672">...</span> <span style="color: #f92672">...</span><span style="color: #f8f8f2">;</span>
+  <span style="color: #75715e">/* e.g. </span>
+<span style="color: #75715e">      min-content 1fr min-content</span>
+<span style="color: #75715e">      100px 1fr max-content</span>
+<span style="color: #75715e">  */</span>
+<span style="color: #f8f8f2">}</span>
+</pre></div>
+
+
+            <div class = "clipboard"><img src = "6x/content_copy_white_24dp%20(1).svg">
+            </div>
+
+
+        </div>
+            <div class = "copy!">
+                <img src = "6x/content_copy_white_24dp%20(1).svg"><p>Копіювати</p>
+            </div>
+        </div>
+    </div>
+    <div class = "row description">
+        <div class = "col-sm-1"></div>
+        <div class = "col-sm-10"><p style = "text-align: left; margin-top: 10px">Кожному модулю можна надавати ім'я</p></div>
+        <div class = "col-sm-1 col-2"></div>
+    </div>
+    <div class = "row ">
+        <div class = "col-sm-1 hcol"></div>
+        <div class = "col-sm-10 col-12">
+            <!-- HTML generated using hilite.me --><div class="code" style=" overflow:auto;width:auto;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><div style = "margin-top:10px">
+         <pre style="margin: 0; line-height: 125%"><span style="color: #a6e22e">.container</span> <span style="color: #f8f8f2">{</span>
+  <span style="color: #f8f8f2">grid</span><span style="color: #f92672">-</span><span style="color: #f8f8f2">template</span><span style="color: #f92672">-</span><span style="color: #f8f8f2">columns</span><span style="color: #f92672">:</span> <span style="color: #f8f8f2">[first]</span> <span style="color: #ae81ff">40px</span> <span style="color: #f8f8f2">[line2]</span> <span style="color: #ae81ff">50px</span> <span style="color: #f8f8f2">[line3]</span> <span style="color: #66d9ef">auto</span> <span style="color: #f8f8f2">[col4</span><span style="color: #f92672">-</span><span style="color: #f8f8f2">start]</span> <span style="color: #ae81ff">50px</span> <span style="color: #f8f8f2">[five]</span> <span style="color: #ae81ff">40px</span> <span style="color: #f8f8f2">[end];</span>
+  <span style="color: #f8f8f2">grid</span><span style="color: #f92672">-</span><span style="color: #f8f8f2">template</span><span style="color: #f92672">-</span><span style="color: #f8f8f2">rows</span><span style="color: #f92672">:</span> <span style="color: #f8f8f2">[row1</span><span style="color: #f92672">-</span><span style="color: #f8f8f2">start]</span> <span style="color: #ae81ff">25</span><span style="color: #f92672">%</span> <span style="color: #f8f8f2">[row1</span><span style="color: #f92672">-</span><span style="color: #f8f8f2">end]</span> <span style="color: #ae81ff">100px</span> <span style="color: #f8f8f2">[third</span><span style="color: #f92672">-</span><span style="color: #f8f8f2">line]</span> <span style="color: #66d9ef">auto</span> <span style="color: #f8f8f2">[last</span><span style="color: #f92672">-</span><span style="color: #f8f8f2">line];</span>
+<span style="color: #f8f8f2">}</span>
+</pre></div>
+
+
+
+            <div class = "clipboard"><img src = "6x/content_copy_white_24dp%20(1).svg">
+            </div>
+
+
+        </div>
+            <div class = "copy!">
+                <img src = "6x/content_copy_white_24dp%20(1).svg"><p>Копіювати</p>
+            </div>
+        </div>
+    </div>
+    <div class = "row description">
+        <div class = "col-sm-1"></div>
+        <div class = "col-sm-10"><p style = "text-align: left; margin-top: 10px">За допомогою grid-temlate досить зручно можна розподілити усі потрібні модулі.</p></div>
+        <div class = "col-sm-1 col-2"></div>
+    </div>
+    <div class = "row ">
+        <div class = "col-sm-1 hcol"></div>
+        <div class = "col-sm-10 col-12">
+            <!-- HTML generated using hilite.me --><div class="code" style=" overflow:auto;width:auto;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><div style = "margin-top:10px">
+       <pre style="margin: 0; line-height: 125%"><span style="color: #a6e22e">.container</span> <span style="color: #f8f8f2">{</span>
+  <span style="color: #f8f8f2">grid</span><span style="color: #f92672">-</span><span style="color: #f8f8f2">template</span><span style="color: #f92672">:</span>
+    <span style="color: #f8f8f2">[row1</span><span style="color: #f92672">-</span><span style="color: #f8f8f2">start]</span> <span style="color: #e6db74">&quot;header header header&quot;</span> <span style="color: #ae81ff">25px</span> <span style="color: #f8f8f2">[row1</span><span style="color: #f92672">-</span><span style="color: #f8f8f2">end]</span>
+    <span style="color: #f8f8f2">[row2</span><span style="color: #f92672">-</span><span style="color: #f8f8f2">start]</span> <span style="color: #e6db74">&quot;footer footer footer&quot;</span> <span style="color: #ae81ff">25px</span> <span style="color: #f8f8f2">[row2</span><span style="color: #f92672">-</span><span style="color: #f8f8f2">end]</span>
+    <span style="color: #f92672">/</span> <span style="color: #66d9ef">auto</span> <span style="color: #ae81ff">50px</span> <span style="color: #66d9ef">auto</span><span style="color: #f8f8f2">;</span>
+<span style="color: #f8f8f2">}</span>
+</pre></div>
+
+
+
+
+            <div class = "clipboard"><img src = "6x/content_copy_white_24dp%20(1).svg">
+            </div>
+
+
+        </div>
+            <div class = "copy!">
+                <img src = "6x/content_copy_white_24dp%20(1).svg"><p>Копіювати</p>
+            </div>
+        </div>
+    </div>
+    <div class = "row description">
+        <div class = "col-sm-1"></div>
+        <div class = "col-sm-10"><p style = "text-align: left; margin-top: 10px">Без встановлення розмірів осередків можна їх розмістити за допомогою властивості grid-template-area. Назва модуля призначається за допомогою grid-area</p></div>
+        <div class = "col-sm-1 col-2"></div>
+    </div>
+    <div class = "row ">
+        <div class = "col-sm-1 hcol"></div>
+        <div class = "col-sm-10 col-12">
+            <!-- HTML generated using hilite.me --><div class="code" style=" overflow:auto;width:auto;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><div style = "margin-top:10px">
+      <pre style="margin: 0; line-height: 125%"><span style="color: #a6e22e">.item-a</span> <span style="color: #f8f8f2">{</span>
+  <span style="color: #f8f8f2">grid</span><span style="color: #f92672">-</span><span style="color: #f8f8f2">area</span><span style="color: #f92672">:</span> <span style="color: #f8f8f2">header;</span>
+<span style="color: #f8f8f2">}</span>
+<span style="color: #a6e22e">.item-b</span> <span style="color: #f8f8f2">{</span>
+  <span style="color: #f8f8f2">grid</span><span style="color: #f92672">-</span><span style="color: #f8f8f2">area</span><span style="color: #f92672">:</span> <span style="color: #f8f8f2">main;</span>
+<span style="color: #f8f8f2">}</span>
+<span style="color: #a6e22e">.item-c</span> <span style="color: #f8f8f2">{</span>
+  <span style="color: #f8f8f2">grid</span><span style="color: #f92672">-</span><span style="color: #f8f8f2">area</span><span style="color: #f92672">:</span> <span style="color: #f8f8f2">sidebar;</span>
+<span style="color: #f8f8f2">}</span>
+<span style="color: #a6e22e">.item-d</span> <span style="color: #f8f8f2">{</span>
+  <span style="color: #f8f8f2">grid</span><span style="color: #f92672">-</span><span style="color: #f8f8f2">area</span><span style="color: #f92672">:</span> <span style="color: #f8f8f2">footer;</span>
+<span style="color: #f8f8f2">}</span>
+
+<span style="color: #a6e22e">.container</span> <span style="color: #f8f8f2">{</span>
+  <span style="color: #66d9ef">display</span><span style="color: #f92672">:</span> <span style="color: #f8f8f2">grid;</span>
+  <span style="color: #f8f8f2">grid</span><span style="color: #f92672">-</span><span style="color: #f8f8f2">template</span><span style="color: #f92672">-</span><span style="color: #f8f8f2">columns</span><span style="color: #f92672">:</span> <span style="color: #ae81ff">50px</span> <span style="color: #ae81ff">50px</span> <span style="color: #ae81ff">50px</span> <span style="color: #ae81ff">50px</span><span style="color: #f8f8f2">;</span>
+  <span style="color: #f8f8f2">grid</span><span style="color: #f92672">-</span><span style="color: #f8f8f2">template</span><span style="color: #f92672">-</span><span style="color: #f8f8f2">rows</span><span style="color: #f92672">:</span> <span style="color: #66d9ef">auto</span><span style="color: #f8f8f2">;</span>
+  <span style="color: #f8f8f2">grid</span><span style="color: #f92672">-</span><span style="color: #f8f8f2">template</span><span style="color: #f92672">-</span><span style="color: #f8f8f2">areas</span><span style="color: #f92672">:</span>
+    <span style="color: #e6db74">&quot;header header header header&quot;</span>
+    <span style="color: #e6db74">&quot;main main . sidebar&quot;</span>
+    <span style="color: #e6db74">&quot;footer footer footer footer&quot;</span><span style="color: #f8f8f2">;</span>
+<span style="color: #f8f8f2">}</span>
+</pre></div>
+
+
+
+
+
+            <div class = "clipboard"><img src = "6x/content_copy_white_24dp%20(1).svg">
+            </div>
+
+
+        </div>
+            <div class = "copy!">
+                <img src = "6x/content_copy_white_24dp%20(1).svg"><p>Копіювати</p>
+            </div>
+        </div>
+    </div>
+    <div class = "row description">
+        <div class = "col-sm-1"></div>
+        <div class = "col-sm-10"><p style = "text-align: left; margin-top: 10px">Властивість gap допомагає визначити відстань між елементами.</p></div>
+        <div class = "col-sm-1 col-2"></div>
+    </div>
+    <div class = "row ">
+        <div class = "col-sm-1 hcol"></div>
+        <div class = "col-sm-10 col-12">
+            <!-- HTML generated using hilite.me --><div class="code" style=" overflow:auto;width:auto;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><div style = "margin-top:10px">
+   <pre style="margin: 0; line-height: 125%"><span style="color: #a6e22e">.container</span> <span style="color: #f8f8f2">{</span>
+  <span style="color: #66d9ef">display</span><span style="color: #f92672">:</span> <span style="color: #f8f8f2">flex;</span>
+  <span style="color: #f8f8f2">gap</span><span style="color: #f92672">:</span> <span style="color: #ae81ff">20px</span><span style="color: #f8f8f2">;</span>
+<span style="color: #f8f8f2">}</span>
+</pre></div>
+
+
+
+
+
+            <div class = "clipboard"><img src = "6x/content_copy_white_24dp%20(1).svg">
+            </div>
+
+
+        </div>
+            <div class = "copy!">
+                <img src = "6x/content_copy_white_24dp%20(1).svg"><p>Копіювати</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+    <footer>
+        <div class = "row">
+            <div class = "col-12">
+                <p>Сайт створено студентом ВПВПС-20-3 <br> Романом Науменко.</p>
+            </div>
+        </div>
+    </footer>
+</div>
+</main>
+<sidemenu>
+    <div class = "smenu">
+        <ul>
+
+            <li>
+                <a href = "index.html">Головна</a>
+
+            </li>
+
+            <li >
+                <a href = "setup.html">Встановлення</a>
+
+            </li>
+            <li class = "nested0" onclick="nes_open(0)">
+                <p>Сітка</p>
+
+            </li>
+            <ul id = "nested0">
+            <li >
+                <a href = "flex-grid.html">Flex-cітка</a>
+            </li>
+            <li style="background-color: #494747">
+                <a href = "grid-grid.html">Grid-cітка</a>
+            </li>
+            </ul>
+            <li class = "nested1" onclick="nes_open(1)">
+                <p>Проєктування</p>
+
+            </li>
+            <ul id = "nested1">
+                <li >
+                    <a href = "view.html">Оздоблення</a>
+                </li>
+                <li >
+                    <a href = "color.html">Колір</a>
+                </li>
+                <li >
+                    <a href = "font.html">Шрифт</a>
+                </li>
+
+            </ul>
+            <li class = "nested2" onclick="nes_open(2)">
+                <p>Верстка</p>
+
+            </li>
+            <ul id = "nested2">
+                <li >
+                    <a href = "relative.html">Адаптивність</a>
+                </li>
+                <li >
+                    <a href = "selectors.html">Селектори</a>
+                </li>
+
+
+            </ul>
+        </ul>
+    </div>
+</sidemenu>
+
+<script type="text/javascript">
+
+    window.addEventListener('resize', start);
+    window.addEventListener('load', start);
+    function start(){
+        if(screen.width > 575) {
+            document.getElementsByClassName('mmain')[0].style.top = document.getElementsByClassName("desktop")[0].offsetHeight + 50 + 'px';
+
+           anime({
+                targets: 'body',
+                opacity: '100%',
+                easing: 'easeInOutSine',
+                duration: 250
+
+            });
+        }else{
+            anime({
+                targets: 'body',
+                opacity: '100%',
+                easing: 'easeInOutSine',
+                duration: 250
+
+            });
+        }
+    }
+
+    open = false;
+    opn = -1;
+    var marked_menu = 2;
+    function exmenu_event(i) {
+            if (open == false) {
+                obj = $('.menu div')[i];
+                obj.classList.add('exmenu');
+                obj.children[0].classList.add('noclick');
+                if (marked_menu == i){
+                    obj_m = $('.marker')[0];
+                    obj_m.style.display = "none"
+                    obj.classList.remove('marked');
+                }
+                var children = [].slice.call(obj.children);
+                children.forEach(element => element.style.display = "block");
+                if (marked_menu == i){
+                    children[0].style.display = "flex"
+                }
+                try {
+                    obj1 = $('.menu div')[i + 1];
+                    obj1.style.marginLeft = obj.offsetWidth + 'px';
+                }catch (exception){
+
+                }
+                open = true;
+                opn = i;
+                document.addEventListener('click', (e) => {
+                    const withinBoundaries = e.composedPath().includes(obj);
+
+                    if (!withinBoundaries) {
+                        close(i);
+                    }
+                });
+            }else{
+                close(i)
+            }
+    }
+        function close(){
+
+            var children = [].slice.call(obj.children);
+            for (j = 1; j < children.length; j++){
+
+                children[j].style.display = "none";
+            }
+            if (marked_menu == opn){
+                obj_m = $('.marker')[0];
+                obj_m.style.display = "flex";
+                obj.classList.add('marked');
+            }
+            children[0].classList.remove('noclick');
+            obj.classList.remove('exmenu');
+            try {
+                obj1.style.marginLeft = '0px';
+            }catch (exception){
+
+            }
+            obj= null; obj1 = null;
+            open = false;
+            opn = -1;
+
+        }
+        var opens = false
+        function get_sidemenu(){
+        if (opens == false){
+            var main =  $('main')[0];
+            var sidem =  $('sidemenu')[0];
+            $('body')[0].style.overflow = "hidden"
+            anime({
+                targets: [main],
+                right: '40%',
+                easing: 'easeInOutSine',
+                duration: 50
+
+            });
+            $('sidemenu')[0].style.display = "block"
+            anime({
+                targets: [sidem],
+                width: '40%',
+                right: '40%',
+                easing: 'easeInOutSine',
+                duration: 50
+            });
+            opens = true
+            }else{
+            close_menu();
+        }
+
+
+        }
+        function close_menu(){
+            var main =  $('main')[0];
+            var sidem =  $('sidemenu')[0];
+            $('body')[0].style.overflowY = "auto"
+            anime({
+                targets: [main],
+                right: '0%',
+                easing: 'easeInOutSine',
+                duration: 50
+
+            });
+            anime({
+                targets: [sidem],
+                width: '0%',
+                right: '0%',
+                easing: 'easeInOutSine',
+                duration: 50
+            });
+            $('sidemenu')[0].style.display = "none"
+            opens = false;
+        }
+        var nopen = -1;
+    var nmain;  var ncontent;
+    function nes_open(i){
+        if (nopen == -1) {
+            nmain = $('.nested' + i)[0];
+            ncontent = $('#nested' + i)[0];
+            nopen = i;
+            nmain.style.backgroundColor= '#3B3B3B';
+            ncontent.style.display = "block";
+        }else
+        {
+            if (nopen == i) {
+                nopen = -1;
+                nmain.style.backgroundColor = "";
+                ncontent.style.display = "none";
+            } else {
+                nopen = -1;
+                nmain.style.backgroundColor = "";
+                ncontent.style.display = "none";
+                nes_open(i);
+            }
+        }
+    }
+    window.onscroll = function() {sticker()};
+    function sticker(){
+
+            if (window.pageYOffset > 20) {
+                $('.emenu')[0].classList.add("sticky");
+            } else {
+                $('.emenu')[0].classList.remove("sticky");
+            }
+
+    }
+
+
+</script>
+</body>
+</html>

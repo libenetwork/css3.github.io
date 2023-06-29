@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="136" height="136" viewBox="0 0 136 136">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_187" data-name="Rectangle 187" width="136" height="136" rx="33" transform="translate(205 2633)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_1" data-name="Mask Group 1" transform="translate(-205 -2633)" clip-path="url(#clip-path)">
+    <g id="logo-mark-902fa09a15aae71f745271760032a0a653c4e69abb1aceb0bbcac5538a90f23e" transform="translate(819.4 3247.4)">
+      <path id="Path_905" data-name="Path 905" d="M-614.4-614.4h136v45.333h-136Z" fill="#fff"/>
+      <path id="Path_906" data-name="Path 906" d="M-614.4-307.2h136v34h-136Z" transform="translate(0 -273.2)" fill="#bfbfbf"/>
+      <path id="Path_907" data-name="Path 907" d="M-614.4-102.4h136v34h-136Z" transform="translate(0 -455.334)" fill="gray"/>
+      <path id="Path_908" data-name="Path 908" d="M-614.4,102.4h136v34h-136Z" transform="translate(0 -637.467)" fill="#404040"/>
+      <path id="Path_909" data-name="Path 909" d="M-614.4,307.2h136v34h-136Z" transform="translate(0 -819.6)"/>
+    </g>
+  </g>
+</svg>

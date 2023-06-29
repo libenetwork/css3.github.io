@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="uk">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <link rel = "icon" href =
+            "pngwing.com%20(2в4).png"
+          type = "image/x-icon">
+    <link rel = "stylesheet" href="shapes.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link rel = "stylesheet" href = "index.css">
+    <link rel = "stylesheet" href = "font/onest.css">
+    <script src = "js/anime.js"></script>
+    <title>Дизайн інтерфейсу за допомогою CSS3</title>
+</head>
+<body>
+<main>
+<header class = "mobile">
+    <div class="row">
+    <div class = "col-2">
+    <a href = "index.html"><img src = "6x/Group%20417.svg"></a></div>
+    <div class = "col-8"></div>
+    <div class = "col-2">
+        <img src = "6x/menu_white_24dp.svg" onclick="get_sidemenu();"></div>
+    </div>
+</header>
+<header class = "desktop">
+
+<!-- фон -->
+
+<div class="area" style=" z-index: 95;">
+    <ul class="circles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div >
+<div class="welcome">
+<div class=" menu" >
+<ul class = "emenu">
+    <li><div><a href = "setup.html">Встановлення</a></div></li>
+    <li><div><a class="" onclick="exmenu_event(1)">Cітка</a><a href="flex-grid.html" style = "display: none">Flex-сітка</a><a href="grid-grid.html" style = "display: none">Grid-сітка</a></div> </li>
+    <li><div><a class="" onclick="exmenu_event(2)">Проєктування</a><a href="view.html" style = "display: none">Оздоблення</a><a href="color.html" style = "display: none">Колір</a><a href="font.html" style = "display: none">Шрифт</a></div> </li>
+    <li><div><a class="" onclick="exmenu_event(3)">Верстка</a><a href="relative.html" style = "display: none">Адаптивність</a><a href="selectors.html" style = "display: none">Селектори</a></div> </li>
+
+</ul>
+</div>
+</nav>
+<div class="row" style = "padding-top:5%"><div class="col-2"></div><div class="col-2 logo">
+    <img src="6x/Ресурс%201@6x.png" alt = "logo" ></div><div class="col-6 logo text"><p>Вдихніть нове життя в свій дизайн</p></div></div><div class="col-2"></div>
+
+    <div class = "expand"><img src = "6x/expand_more_black_24dp%20(1).svg" alt = "expand"></div></div>
+</div>
+    </div>
+</header>
+
+<div class = "mmain"><div class = "base">
+    <div class = "row" id = "">
+        <div class = "col-sm-1 hcol"></div>
+        <div class = "col-12 col-sm-10">
+            <h1>Дизайн інтерфейсу за допомогою CSS3</h1>
+        </div>
+        <div class = "col-sm-1 hcol"></div></div>
+    <div class = "row description">
+        <div class = "col-sm-1 col-2"></div>
+        <div class = "col-sm-10 col-8"><p>Побудова інтерфейсу складається з таких етапів:</p></div>
+            <div class = "col-sm-1 col-2"></div>
+</div>
+    <div class = "row paragraph-illustration">
+        <div class = "col-1 hcol"></div>
+        <div class = "illustration col-sm-3 col-6">
+            <div class = "col-sm-3 hcol"></div>
+            <div class = "col-sm-9 col-12"><img src = "6x/Group%20418.svg"></div>
+        </div>
+        <div class = "text сol-12 col-sm-7">
+            <div class = "col-1 dot uvcol"><p>1</p></div>
+            <div class = "text col-10"><h2>Отримання завдання від замовника</h2></div>
+            <div class = "col-1 col-sm-1"></div>
+            <div class = "description text col-12 col-sm7"><p>Почути побажання замовника, як він хотів би бачити власний сайт, його назва та призначення</p></div>
+        </div>
+
+    </div>
+    <div class = "row paragraph-illustration">
+        <div class = "col-1 hcol"></div>
+        <div class = "illustration col-sm-3 col-6">
+            <div class = "col-sm-3 hcol"></div>
+            <div class = "col-sm-9 col-12"><img src = "6x/Group%20283.svg"></div>
+        </div>
+        <div class = "text сol-12 col-sm-7">
+            <div class = "col-1 dot uvcol"><p>2</p></div>
+            <div class = "text col-10"><h2>Проєктування модульної сітки інтерфейсу</h2></div>
+            <div class = "col-1 col-sm-1"></div>
+            <div class = "description text col-12 col-sm7"><p>Встановити відносини між елементами інтерфейсу завдяки модульної сітки Web-додатка</p></div>
+        </div>
+
+    </div>  <div class = "row paragraph-illustration">
+    <div class = "col-1 hcol"></div>
+    <div class = "illustration col-sm-3 col-6">
+        <div class = "col-sm-3 hcol"></div>
+        <div class = "col-sm-9 col-12"><img src = "6x/Group%20205.svg"></div>
+    </div>
+    <div class = "text сol-12 col-sm-7">
+        <div class = "col-1 dot uvcol"><p>3</p></div>
+        <div class = "text col-10"><h2>Розробка оформлення інтерфейсу</h2></div>
+        <div class = "col-1 col-sm-1"></div>
+        <div class = "description text col-12 col-sm7"><p>Побудова елементів інтерфейсу, вибір оформлення елементів, підбір кольорової схеми, шрифтів</p></div>
+    </div>
+
+</div>
+
+    <div class = "row paragraph-illustration">
+        <div class = "col-1 hcol"></div>
+        <div class = "illustration col-sm-3 col-6">
+            <div class = "col-sm-3 hcol"></div>
+            <div class = "col-sm-9 col-12"><img src = "6x/Group%20293.svg"></div>
+        </div>
+        <div class = "text сol-12 col-sm-7">
+            <div class = "col-1 dot uvcol"><p>4</p></div>
+            <div class = "text col-10"><h2>Верстка інтерфейса веб-сайту з CSS3</h2></div>
+            <div class = "col-1 col-sm-1"></div>
+            <div class = "description text col-12 col-sm7"><p>Виористання таблиці стилів CSS3 задля надання сайту спланованого до того вигляду.</p></div>
+        </div>
+
+    </div>
+    <div class = "row">
+        <div class = "col-sm-1 hcol"></div>
+        <div class = "col-12 col-sm-10">
+            <h1>Це довідник по використанню CSS3 у розробці веб-інтерфейсів!</h1>
+        </div>
+        <div class = "col-sm-1 hcol"></div></div>
+    <div class = "row centered" style="margin-top: 20px">
+        <div class = "col-sm-1 col-2"></div>
+        <div class="col-8 col-sm-10"><h2>Кожен розділ сайту допомогає у створенні інтерфейсу на певному етапі</h2></div>
+        <div class = "col-sm-1 col-2"></div>
+    </div>
+</div>
+    <footer>
+        <div class = "row">
+            <div class = "col-12">
+                <p>Сайт створено студентом ВПВПС-20-3 <br> Романом Науменко.</p>
+            </div>
+        </div>
+    </footer>
+</div>
+</main>
+<sidemenu>
+    <div class = "smenu">
+        <ul>
+
+            <li  style="background-color: #494747">
+                <a href = "index.html" >Головна</a>
+
+            </li>
+
+            <li>
+                <a href = "setup.html">Встановлення</a>
+
+            </li>
+            <li class = "nested0" onclick="nes_open(0)">
+                <p>Сітка</p>
+
+            </li>
+            <ul id = "nested0">
+            <li >
+                <a href = "flex-grid.html">Flex-cітка</a>
+            </li>
+            <li >
+                <a href = "grid-grid.html">Grid-cітка</a>
+            </li>
+            </ul>
+            <li class = "nested1" onclick="nes_open(1)">
+                <p>Проєктування</p>
+
+            </li>
+            <ul id = "nested1">
+                <li >
+                    <a href = "view.html">Оздоблення</a>
+                </li>
+                <li >
+                    <a href = "color.html">Колір</a>
+                </li>
+                <li >
+                    <a href = "font.html">Шрифт</a>
+                </li>
+
+            </ul>
+            <li class = "nested2" onclick="nes_open(2)">
+                <p>Верстка</p>
+
+            </li>
+            <ul id = "nested2">
+                <li >
+                    <a href = "relative.html">Адаптивність</a>
+                </li>
+                <li >
+                    <a href = "selectors.html">Селектори</a>
+                </li>
+
+
+            </ul>
+        </ul>
+    </div>
+</sidemenu>
+
+<script type="text/javascript">
+
+    window.addEventListener('resize', start);
+    window.addEventListener('load', start);
+    function start(){
+        if(screen.width > 575) {
+            document.getElementsByClassName('area')[0].style.height = document.getElementsByClassName("desktop")[0].offsetHeight + 'px';
+            document.getElementsByClassName('mmain')[0].style.top = document.getElementsByClassName("desktop")[0].offsetHeight + 20 + 'px';
+            document.getElementsByClassName('dot')[0].style.width = document.getElementsByClassName("dot")[0].offsetWidth + 'px';
+            document.getElementsByClassName('dot')[0].style.height = document.getElementsByClassName("dot")[0].offsetWidth + 'px';
+            document.getElementsByClassName('dot')[1].style.width = document.getElementsByClassName("dot")[1].offsetWidth + 'px';
+            document.getElementsByClassName('dot')[1].style.height = document.getElementsByClassName("dot")[1].offsetWidth + 'px';
+            document.getElementsByClassName('dot')[2].style.width = document.getElementsByClassName("dot")[2].offsetWidth + 'px';
+            document.getElementsByClassName('dot')[2].style.height = document.getElementsByClassName("dot")[2].offsetWidth + 'px';
+            document.getElementsByClassName('dot')[3].style.width = document.getElementsByClassName("dot")[3].offsetWidth + 'px';
+            document.getElementsByClassName('dot')[3].style.height = document.getElementsByClassName("dot")[3].offsetWidth + 'px';
+            anime({
+                targets: 'body',
+                opacity: '100%',
+                easing: 'easeInOutSine',
+                duration: 250
+
+            });
+        }else{
+            anime({
+                targets: 'body',
+                opacity: '100%',
+                easing: 'easeInOutSine',
+                duration: 250
+
+            });
+        }
+    }
+
+    open = false;
+    function exmenu_event(i) {
+            if (open == false) {
+                obj = $('.menu div')[i];
+                obj.classList.add('exmenu');
+                obj.children[0].classList.add('noclick');
+                var children = [].slice.call(obj.children);
+                children.forEach(element => element.style.display = "block");
+                try {
+                    obj1 = $('.menu div')[i + 1];
+                    obj1.style.marginLeft = obj.offsetWidth + 'px';
+                }catch (exception){
+
+                }
+                open = true;
+                start();
+                document.addEventListener('click', (e) => {
+                    const withinBoundaries = e.composedPath().includes(obj);
+
+                    if (!withinBoundaries) {
+                        close(i);
+                    }
+                });
+            }else{
+                close()
+            }
+    }
+        function close(){
+
+            var children = [].slice.call(obj.children);
+            for (j = 1; j < children.length; j++){
+
+                children[j].style.display = "none";
+            }
+            children[0].classList.remove('noclick');
+            obj.classList.remove('exmenu');
+            try {
+                obj1.style.marginLeft = '0px';
+            }catch (exception){
+
+            }
+            obj= null; obj1 = null;
+            open = false;
+            start();
+        }
+        var opens = false
+        function get_sidemenu(){
+        if (opens == false){
+            var main =  $('main')[0];
+            var sidem =  $('sidemenu')[0];
+            $('body')[0].style.overflow = "hidden"
+            anime({
+                targets: [main],
+                right: '40%',
+                easing: 'easeInOutSine',
+                duration: 50
+
+            });
+            $('sidemenu')[0].style.display = "block"
+            anime({
+                targets: [sidem],
+                width: '40%',
+                right: '40%',
+                easing: 'easeInOutSine',
+                duration: 50
+            });
+            opens = true
+            }else{
+            close_menu();
+        }
+
+
+        }
+        function close_menu(){
+            var main =  $('main')[0];
+            var sidem =  $('sidemenu')[0];
+            $('body')[0].style.overflowY = "auto"
+            anime({
+                targets: [main],
+                right: '0%',
+                easing: 'easeInOutSine',
+                duration: 50
+
+            });
+            anime({
+                targets: [sidem],
+                width: '0%',
+                right: '0%',
+                easing: 'easeInOutSine',
+                duration: 50
+            });
+            $('sidemenu')[0].style.display = "none"
+            opens = false;
+        }
+        var nopen = -1;
+    var nmain;  var ncontent;
+    function nes_open(i){
+        if (nopen == -1) {
+            nmain = $('.nested' + i)[0];
+            ncontent = $('#nested' + i)[0];
+            nopen = i;
+            nmain.style.backgroundColor= '#3B3B3B';
+            ncontent.style.display = "block";
+        }else
+        {
+            if (nopen == i) {
+                nopen = -1;
+                nmain.style.backgroundColor = "";
+                ncontent.style.display = "none";
+            } else {
+                nopen = -1;
+                nmain.style.backgroundColor = "";
+                ncontent.style.display = "none";
+                nes_open(i);
+            }
+        }
+    }
+    window.onscroll = function() {sticker()};
+    function sticker(){
+
+            if (window.pageYOffset > $('.area')[0].offsetHeight) {
+                $('.emenu')[0].classList.add("sticky");
+            } else {
+                $('.emenu')[0].classList.remove("sticky");
+            }
+
+    }
+
+
+</script>
+</body>
+</html>

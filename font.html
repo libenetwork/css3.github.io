@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="uk" xmlns="http://www.w3.org/1999/html">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <link rel = "icon" href =
+            "pngwing.com%20(2в4).png"
+          type = "image/x-icon">
+    <link rel = "stylesheet" href="shapes.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link rel = "stylesheet" href = "index.css">
+    <link rel = "stylesheet" href = "font/onest.css">
+    <script src = "js/anime.js"></script>
+
+
+    <title>Шрифт | Дизайн інтерфейсу за допомогою CSS3</title>
+</head>
+<body>
+<main>
+<header class = "mobile" style = "width:auto">
+    <div class="row">
+    <div class = "col-2">
+    <a href = "index.html"><img src = "6x/Group%20417.svg"></a></div>
+    <div class = "col-8"></div>
+    <div class = "col-2">
+        <img src = "6x/menu_white_24dp.svg" onclick="get_sidemenu();"></div>
+    </div>
+</header>
+<header class = "desktop" style="background-color: rgba(0,0,0,0)">
+
+<!-- фон -->
+
+
+
+<div class=" menu" >
+<ul class = "emenu" id = "now" style="position: fixed">
+    <li><div><a class = "no-inlight" href="index.html"><img src="6x/Group%20297.svg"></a> </div></li>
+    <li><div><a  href = "setup.html">Встановлення</a></div></li>
+    <li><div><a class="" onclick="exmenu_event(2)">Cітка</a><a href="flex-grid.html" style = "display: none">Flex-сітка</a><a href="grid-grid.html" style = "display: none">Grid-сітка</a></div> </li>
+    <li><div><a class="selected marked" onclick="exmenu_event(3)"><div class = "marker">Шрифт</div>Проєктування</a><a href="view.html" style = "display: none">Оздоблення</a><a href="color.html" style = "display: none">Колір</a><a href="font.html" style = "display: none">Шрифт</a></div> </li>
+    <li><div><a class="" onclick="exmenu_event(5)">Верстка</a><a href="relative.html" style = "display: none">Адаптивність</a><a href="selectors.html" style = "display: none">Селектори</a></div> </li>
+
+</ul>
+</div>
+</nav>
+
+</header>
+
+<div class = "mmain"><div class = "base" style = "margin-right: 15px">
+    <div class = "row" id = "">
+        <div class = "col-sm-1 hcol"></div>
+        <div class = "col-12 col-sm-10">
+            <h1>Шрифт</h1>
+        </div>
+        <div class = "col-sm-1 hcol" ></div></div>
+    <div class = "row description" style="margin-top: 50px">
+        <div class = "col-sm-1"></div>
+        <div class = "col-sm-10"><img src = "6x/Group%20205.svg" style = "float:left; margin-right: 8.3333333%" class = "col-sm-4 hcol"><p style = "text-align: left; margin-top: 0">Вибір шрифтів то кольорів є важливим етапом у розробці веб-інтерфейсу. Рекомендоване використання не більше трьох шрифтів і їх накреслень, але вони мають підкреслювати дизайн, передавати його настрій. Шрифт може підкреслювати деякі його особливості. Однак основний текст має гарно читатися, тому не рекомендується використання для того декоративних шрифтів. Самі вони мають гармоніювати між собою</p>
+        <p style = "text-align: left; margin-top: 0" >Також як із кольорами, існують сервіси де можна легко підібрати необхідні для роботи шрифти.</p></div><div class = "col-sm-1 col-2"></div>
+</div>
+
+
+    <div class = "row columns">
+        <div class = "col-sm-1 hcol"></div>
+
+        <div class = "col-sm-10 col-12">
+            <div class = "label">
+               <a href = "https://fonts.google.com/"><p>Google Fonts</p></a>
+            </div>
+            <p>Одне з основних джерел якісних безкоштовних шрифтів - сервіс Google Fonts . Ці гарнітури розробляють у провідних світових студіях, і, звичайно, не безкоштовно – просто витрати бере на себе Google.
+            </p><p>У бібліотеці багато простих, так званих наборних шрифтів. Вони добре підійдуть для повсякденних потреб - друку великих текстів та невеликих написів. Більшість гарнітур має багато накреслень: кілька варіантів жирного і тонкого написання букв. Можна взяти один шрифт, використовувати різні зображення в залежності від випадку, і всі вони будуть поєднуватися між собою.
+
+        </p>
+        </div>
+    </div>
+    <div class = "row columns">
+        <div class = "col-sm-1 hcol"></div>
+
+        <div class = "col-sm-10 col-12">
+            <div class = "label">
+
+                <a href = "https://fonts.adobe.com/"><p>Adobe Fonts</p></a>
+            </div>
+            <p>Величезну бібліотеку також має і Adobe. Якщо у вас є підписка на Creative Cloud, то ви отримуєте величезний набір, в тому числі і кириличних шрифтів які також можна використовувати і у веб-дизайні.
+              </p><p>Інструмент пропонує величезний вибір шрифтів в великої кількості видів із великою кількістю накреслень</p>
+        </div>
+    </div>
+    <div class = "row columns">
+        <div class = "col-sm-1 hcol"></div>
+
+        <div class = "col-sm-10 col-12">
+            <div class = "label">
+
+                <a href = "https://fontstorage.com/"><p>Fontstorage</p></a>
+            </div>
+            <p>Coolors дозволяє вивчити трендові палітри або створити власну. Для початку роботи потрібно запустити генератор, натиснувши кнопку старту, — відкриється рандомна палітра. Можна зберегти кольори, копіювати код відтінку або експортувати палітру. Щоб викликати іншу схему, достатньо натиснути на пробіл.
+                За допомогою додаткових налаштувань можна налаштовувати кольори, створювати градієнти, витягувати кольори з фотографій та інше.
+
+            </p><p>На сайті є зручний пошук за категоріями, алфавітом та тегами. Можна підібрати шрифти під потрібний настрій – скажімо, смішні чи vintage.
+        </p>
+        </div>
+    </div>
+    <div class = "row columns">
+        <div class = "col-sm-1 hcol"></div>
+
+        <div class = "col-sm-10 col-12">
+            <div class = "label">
+
+                <a href = "https://0to255.com/"><p>0to255</p></a>
+            </div>
+            <p>Ще один агрегатор , на якому зібрані платні та безкоштовні шрифти від різних дизайнерів. Безкоштовні роботи легко знайти у відповідному розділі . При цьому ліцензії можуть бути різними. Потрібно натиснути “free download” на сторінці шрифту, що сподобався, і на пошту прийде додаткова інформація про те, як можна використовувати гарнітуру.
+
+            </p>
+        </div>
+    </div>
+
+
+    <div class = "row description" style="margin-top: 50px">
+        <div class = "col-sm-1"></div>
+        <div class = "col-sm-10"><p style = "text-align: left; margin-top: 0">
+            Не варто забувати про багато особливостей роботи із шрифтами, шрифти мають суміщатися між собою, гарно читатися, виглядати сучасно, мати відповідну ліцензію, в них має бути доступна українська абетка та всі необхідні символи.
+        </div>
+</div>
+</div>
+
+    <footer>
+        <div class = "row">
+            <div class = "col-12">
+                <p>Сайт створено студентом ВПВПС-20-3 <br> Романом Науменко.</p>
+            </div>
+        </div>
+    </footer>
+</div>
+</main>
+<sidemenu>
+    <div class = "smenu">
+        <ul>
+
+            <li>
+                <a href = "index.html">Головна</a>
+
+            </li>
+
+            <li >
+                <a href = "setup.html">Встановлення</a>
+
+            </li>
+            <li class = "nested0" onclick="nes_open(0)">
+                <p>Сітка</p>
+
+            </li>
+            <ul id = "nested0">
+            <li >
+                <a href = "flex-grid.html">Flex-cітка</a>
+            </li>
+            <li >
+                <a href = "grid-grid.html">Grid-cітка</a>
+            </li>
+            </ul>
+            <li class = "nested1" onclick="nes_open(1)">
+                <p>Проєктування</p>
+
+            </li>
+            <ul id = "nested1">
+                <li >
+                    <a href = "view.html">Оздоблення</a>
+                </li>
+                <li style="background-color: #494747">
+                    <a href = "color.html">Колір</a>
+                </li>
+                <li >
+                    <a href = "font.html">Шрифт</a>
+                </li>
+
+            </ul>
+            <li class = "nested2" onclick="nes_open(2)">
+                <p>Верстка</p>
+
+            </li>
+            <ul id = "nested2">
+                <li >
+                    <a href = "relative.html">Адаптивність</a>
+                </li>
+                <li >
+                    <a href = "selectors.html">Селектори</a>
+                </li>
+
+
+            </ul>
+        </ul>
+    </div>
+</sidemenu>
+
+<script type="text/javascript">
+
+    window.addEventListener('resize', start);
+    window.addEventListener('load', start);
+    function start(){
+        if(screen.width > 575) {
+            document.getElementsByClassName('mmain')[0].style.top = document.getElementsByClassName("desktop")[0].offsetHeight + 50 + 'px';
+
+            anime({
+                targets: 'body',
+                opacity: '100%',
+                easing: 'easeInOutSine',
+                duration: 250
+
+            });
+        }else{
+            anime({
+                targets: 'body',
+                opacity: '100%',
+                easing: 'easeInOutSine',
+                duration: 250
+
+            });
+        }
+    }
+
+    open = false;
+    opn = -1;
+    var marked_menu = 3;
+    function exmenu_event(i) {
+            if (open == false) {
+                obj = $('.menu div')[i];
+                obj.classList.add('exmenu');
+                obj.children[0].classList.add('noclick');
+                if (marked_menu == i){
+                    obj_m = $('.marker')[0];
+                    obj_m.style.display = "none"
+                    obj.classList.remove('marked');
+                }
+                var children = [].slice.call(obj.children);
+                children.forEach(element => element.style.display = "block");
+                if (marked_menu == i){
+                    children[0].style.display = "flex"
+                }
+                try {
+                    obj1 = $('.menu div')[i + 1];
+                    obj1.style.marginLeft = obj.offsetWidth + 'px';
+                }catch (exception){
+
+                }
+                open = true;
+                opn = i;
+                document.addEventListener('click', (e) => {
+                    const withinBoundaries = e.composedPath().includes(obj);
+
+                    if (!withinBoundaries) {
+                        close(i);
+                    }
+                });
+            }else{
+                close(i)
+            }
+    }
+        function close(){
+
+            var children = [].slice.call(obj.children);
+            for (j = 1; j < children.length; j++){
+
+                children[j].style.display = "none";
+            }
+            if (marked_menu == opn){
+                obj_m = $('.marker')[0];
+                obj_m.style.display = "flex";
+                obj.classList.add('marked');
+            }
+            children[0].classList.remove('noclick');
+            obj.classList.remove('exmenu');
+            try {
+                obj1.style.marginLeft = '0px';
+            }catch (exception){
+
+            }
+            obj= null; obj1 = null;
+            open = false;
+            opn = -1;
+
+        }
+        var opens = false
+        function get_sidemenu(){
+        if (opens == false){
+            var main =  $('main')[0];
+            var sidem =  $('sidemenu')[0];
+            $('body')[0].style.overflow = "hidden"
+            anime({
+                targets: [main],
+                right: '40%',
+                easing: 'easeInOutSine',
+                duration: 50
+
+            });
+            $('sidemenu')[0].style.display = "block"
+            anime({
+                targets: [sidem],
+                width: '40%',
+                right: '40%',
+                easing: 'easeInOutSine',
+                duration: 50
+            });
+            opens = true
+            }else{
+            close_menu();
+        }
+
+
+        }
+        function close_menu(){
+            var main =  $('main')[0];
+            var sidem =  $('sidemenu')[0];
+            $('body')[0].style.overflowY = "auto"
+            anime({
+                targets: [main],
+                right: '0%',
+                easing: 'easeInOutSine',
+                duration: 50
+
+            });
+            anime({
+                targets: [sidem],
+                width: '0%',
+                right: '0%',
+                easing: 'easeInOutSine',
+                duration: 50
+            });
+            $('sidemenu')[0].style.display = "none"
+            opens = false;
+        }
+        var nopen = -1;
+    var nmain;  var ncontent;
+    function nes_open(i){
+        if (nopen == -1) {
+            nmain = $('.nested' + i)[0];
+            ncontent = $('#nested' + i)[0];
+            nopen = i;
+            nmain.style.backgroundColor= '#3B3B3B';
+            ncontent.style.display = "block";
+        }else
+        {
+            if (nopen == i) {
+                nopen = -1;
+                nmain.style.backgroundColor = "";
+                ncontent.style.display = "none";
+            } else {
+                nopen = -1;
+                nmain.style.backgroundColor = "";
+                ncontent.style.display = "none";
+                nes_open(i);
+            }
+        }
+    }
+    window.onscroll = function() {sticker()};
+    function sticker(){
+
+            if (window.pageYOffset > 20) {
+                $('.emenu')[0].classList.add("sticky");
+            } else {
+                $('.emenu')[0].classList.remove("sticky");
+            }
+
+    }
+
+
+</script>
+</body>
+</html>
